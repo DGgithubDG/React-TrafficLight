@@ -2,13 +2,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-//include bootstrap npm library into the bundle
-
-//include your index.scss file into the bundle
-import "../styles/App.css";
+// include your styles into the webpack bundle
+import "../styles/index.css";
 
 //import your own components
-import { TLight } from "./component/Light";
+import  { Home }  from "./component/home.jsx";
 
 //render your react application
-ReactDOM.render(<TLight />, document.querySelector("#app"));
+ReactDOM.render(<Home />, document.querySelector("#app"));
